@@ -25,3 +25,9 @@ po/Makevars.template
 Makefile
 Makefile.in
 compile
+
+debian
+.anjuta
+.anjuta_sym_db.db
+ClipIt.anjuta
+
