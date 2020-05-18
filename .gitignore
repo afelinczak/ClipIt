@@ -30,4 +30,11 @@ debian
 .anjuta
 .anjuta_sym_db.db
 ClipIt.anjuta
+build
+.idea/
+CMakeCache.txt
+ClipIt
+ClipIt.cbp
+cmake_install.cmake
+
 
