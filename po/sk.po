@@ -1,22 +1,22 @@
 # ClipIt translation file.
 # Copyright (C) 2010-2019 Cristian Henzel <oss@rspwn.com>
 # This file is distributed under the same license as the ClipIt package.
-# 
-# Translators:
-# Richard <ric_m_98@yahoo.fr>, 2011, 2012
+# Cristian Henzel <oss@rspwn.com>, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: ClipIt\n"
 "Report-Msgid-Bugs-To: Cristian Henzel <oss@rspwn.com>\n"
 "POT-Creation-Date: 2019-02-02 04:12+0200\n"
-"PO-Revision-Date: 2019-02-02 02:14+0000\n"
-"Last-Translator: Cristian Henzel <oss@rspwn.com>\n"
-"Language-Team: French (France) (http://www.transifex.com/shantzu/clipit/language/fr_FR/)\n"
+"PO-Revision-Date: 2019-05-08 22:43+0200\n"
+"Language-Team: Cristian Henzel <oss@rspwn.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr_FR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+"Last-Translator: Jose Riha <jose1711@gmail.com>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"Language: sk_SK\n"
 
 #: ../data/clipit-startup.desktop.in.h:1 ../data/clipit.desktop.in.h:1
 msgid "ClipIt"
@@ -25,330 +25,332 @@ msgstr "ClipIt"
 #: ../data/clipit-startup.desktop.in.h:2 ../data/clipit.desktop.in.h:2
 #: ../src/main.c:1077
 msgid "Clipboard Manager"
-msgstr "Gestionnaire de Presse-Papier"
+msgstr "Správca schránky"
 
 #: ../src/main.c:395
 msgid "Lightweight GTK+ clipboard manager."
-msgstr "Gestionnaire de Presse-Papier Léger en GTK +."
+msgstr "Odľahčený GTK+ správca schránky."
 
 #. Actions using:
 #: ../src/main.c:465
 msgid "Actions using:"
-msgstr "Scripts utilisant:"
+msgstr "Akcie pre:"
 
 #. Create menu item for empty clipboard contents
 #: ../src/main.c:474 ../src/main.c:491
 msgid "None"
-msgstr "Aucun"
+msgstr "Žiadny"
 
 #: ../src/main.c:494
 msgid "<b>None</b>"
-msgstr "<b>Aucun</b>"
+msgstr "<b>Žiadny</b>"
 
 #. File contained no actions so adding empty
 #. File did not open so adding empty
 #. Nothing in history so adding empty
 #: ../src/main.c:516 ../src/main.c:545 ../src/main.c:832
 msgid "Empty"
-msgstr "Vide"
+msgstr "Prázdny"
 
 #. Append "Remove all" item
 #: ../src/main.c:552 ../src/main.c:885 ../src/manage.c:407
 msgid "Remove all"
-msgstr "Tout effacer"
+msgstr "Odstrániť všetko"
 
 #. Edit actions
 #: ../src/main.c:557
 msgid "_Edit actions"
-msgstr "_Editer les actions"
+msgstr "_Upraviť akcie"
 
 #. Offline mode checkbox
 #: ../src/main.c:924
 msgid "_Offline mode"
-msgstr "M_ode hors connexion"
+msgstr "Režim _offline"
 
 #. Manage history
 #: ../src/main.c:933
 msgid "_Manage history"
-msgstr "_Gérer historique"
+msgstr "_Správa histórie"
 
 #. Create the dialog
 #: ../src/manage.c:138
 msgid "Editing Clipboard"
-msgstr "Éditer le Presse-Papier "
+msgstr "Úprava schránky"
 
 #: ../src/manage.c:158
 msgid "_Static item"
-msgstr "Elément _Statique"
+msgstr "_Statická položka"
 
 #: ../src/manage.c:240
 msgid "Clear the history?"
-msgstr "Effacer l'historique?"
+msgstr "Vyčistiť históriu?"
 
 #: ../src/manage.c:241
 msgid "Clear history"
-msgstr "Effacer historique"
+msgstr "Vyčistiť históriu"
 
 #: ../src/manage.c:353
 msgid "Manage History"
-msgstr "Gérer l'historique"
+msgstr "Správa histórie"
 
 #: ../src/manage.c:356
 msgid " (Offline mode)"
-msgstr "(Mode hors connexion)"
+msgstr " (Režim offline)"
 
 #: ../src/manage.c:398
 msgid "Results"
-msgstr "Résultats"
+msgstr "Výsledky"
 
 #: ../src/manage.c:403
 msgid "Edit"
-msgstr "Modifier"
+msgstr "Upraviť"
 
 #: ../src/manage.c:405 ../src/preferences.c:984 ../src/preferences.c:1045
 msgid "Remove"
-msgstr "Enlever"
+msgstr "Odstrániť"
 
 #: ../src/manage.c:409
 msgid "Close"
-msgstr "Fermer"
+msgstr "Zavrieť"
 
 #: ../src/preferences.c:182
 msgid "Save history"
-msgstr "Enregistrer l'historique"
+msgstr "Uložiť históriu"
 
 #: ../src/preferences.c:215
 msgid "Remove history file"
-msgstr "Effacer le fichier historique"
+msgstr "Odstrániť súbor s históriou"
 
 #. Create the dialog
 #: ../src/preferences.c:730
 msgid "Preferences"
-msgstr "Préférences"
+msgstr "Predvoľby"
 
 #: ../src/preferences.c:749
 msgid "Settings"
-msgstr "Réglages"
+msgstr "Nastavenia"
 
 #: ../src/preferences.c:757
 msgid "<b>Clipboards</b>"
-msgstr "<b>Presse-Papier</b>"
+msgstr "<b>Schránky</b>"
 
 #: ../src/preferences.c:764
 msgid "Use _Copy (Ctrl-C)"
-msgstr "Utiliser _Copier (Ctrl-C)"
+msgstr "Použiť _schránku (Ctrl-C)"
 
 #: ../src/preferences.c:767
 msgid "Use _Primary (Selection)"
-msgstr "Utiliser _Première(Sélection)"
+msgstr "Použiť _primárny (výber)"
 
 #: ../src/preferences.c:770
 msgid "S_ynchronize clipboards"
-msgstr "S_ynchroniser les presses-papiers"
+msgstr "S_ynchronizovať schránku a primárny výber"
 
 #: ../src/preferences.c:772
 msgid "_Automatically paste selected item"
-msgstr "Coller _Automatiquement l'élément sélectionné"
+msgstr "_Automaticky vložiť vybranú položku"
 
 #: ../src/preferences.c:781
 msgid "<b>Miscellaneous</b>"
-msgstr "<b>Divers</b>"
+msgstr "<b>Rôzne</b>"
 
 #: ../src/preferences.c:788
 msgid "Show _indexes in history menu"
-msgstr "Montrer _index dans le menu historique"
+msgstr "_Zobraziť poradie v ponuke histórie"
 
 #: ../src/preferences.c:790
 msgid "S_ave URIs"
-msgstr "S_auver les URIs"
+msgstr "_Ukladať URI"
 
 #: ../src/preferences.c:792
 msgid "Capture _hyperlinks only"
-msgstr "Capturer seulement les _hyperliens"
+msgstr "Zachytávať iba _hypertextové odkazy"
 
 #: ../src/preferences.c:794
 msgid "C_onfirm before clearing history"
-msgstr "C_onfirmer avant de vider l'historique"
+msgstr "_Potvrdiť pred vyčistením histórie"
 
 #: ../src/preferences.c:796
 msgid "_Use right-click menu"
-msgstr "_Utiliser le menu clic droit"
+msgstr "P_oužívať ponuku pre pravé tlačidlo myši"
 
 #: ../src/preferences.c:805
 msgid "History"
-msgstr "Historique"
+msgstr "História"
 
 #: ../src/preferences.c:813
 msgid "<b>History</b>"
-msgstr "<b>Historique</b>"
+msgstr "<b>História</b>"
 
 #: ../src/preferences.c:820
 msgid "Save _history"
-msgstr "Enregistrer _historique"
+msgstr "Ukladať _históriu"
 
 #: ../src/preferences.c:821
 msgid "Save and restore history between sessions"
-msgstr "Enregistrer et restaurer l'historique entre sessions"
+msgstr "Ukladať a obnovovať históriu medzi jednotlivými sedeniami"
 
 #: ../src/preferences.c:825
 msgid "Items in history:"
-msgstr "Éléments dans l'historique:"
+msgstr "Položiek v histórii:"
 
 #: ../src/preferences.c:834
 msgid "Items in menu:"
-msgstr "Éléments dans le menu:"
+msgstr "Položiek v ponuke:"
 
 #: ../src/preferences.c:841
 msgid "Show _static items in menu"
-msgstr "Montrer les éléments _statiques dans le menu"
+msgstr "Zobraziť _statické položky v ponuke"
 
 #: ../src/preferences.c:846
 msgid "Static items in menu:"
-msgstr "Éléments statiques dans le menu:"
+msgstr "Statických položiek v ponuke:"
 
 #: ../src/preferences.c:854
 msgid "Purge history after _timeout"
-msgstr "Effacer l'historique après _délais d'attente"
+msgstr "Vyčistiť históriu po uplynutí č_asu"
 
 #: ../src/preferences.c:860
 msgid "Timeout seconds"
-msgstr "Délai d'attente en secondes"
+msgstr "Časový limit v sekundách"
 
 #: ../src/preferences.c:875
 msgid "<b>Items</b>"
-msgstr "<b>Éléments</b>"
+msgstr "<b>Položky</b>"
 
 #: ../src/preferences.c:882
 msgid "Show in a single _line"
-msgstr "Montrer sur une ligne"
+msgstr "Zobraziť v _jednom riadku"
 
 #: ../src/preferences.c:884
 msgid "Show in _reverse order"
-msgstr "Montrer dans l'ordre inverse"
+msgstr "Zobraziť v _opačnom poradí"
 
 #: ../src/preferences.c:888
 msgid "Character length of items:"
-msgstr "Longueur des éléments:"
+msgstr "Počet znakov položiek:"
 
 #: ../src/preferences.c:897
 msgid "Omit items in the:"
-msgstr "Omettre des éléments dans le : "
+msgstr "Vynechať položky:"
 
 #: ../src/preferences.c:901
 msgid "Beginning"
-msgstr "Début"
+msgstr "Na začiatku"
 
 #: ../src/preferences.c:902
 msgid "Middle"
-msgstr "Milieu"
+msgstr "v strede"
 
 #: ../src/preferences.c:903
 msgid "End"
-msgstr "Fin"
+msgstr "na konci"
 
 #: ../src/preferences.c:933
 msgid "Actions"
-msgstr "Actions"
+msgstr "Akcie"
 
 #. Build the actions label
 #: ../src/preferences.c:938
 msgid "Control-click ClipIt's tray icon to use actions"
-msgstr "Control-clic sur icône ClipIt pour utiliser les scripts"
+msgstr "Control-klik na ikonu ClipIt zobrazí menu akcií"
 
 #: ../src/preferences.c:958
 msgid "Action"
-msgstr "Action"
+msgstr "Akcia"
 
 #: ../src/preferences.c:965
 msgid "Command"
-msgstr "Commande"
+msgstr "Príkaz"
 
 #: ../src/preferences.c:980 ../src/preferences.c:1041
 msgid "Add..."
-msgstr "Ajouter..."
+msgstr "Pridať..."
 
 #: ../src/preferences.c:1001
 msgid "Exclude"
-msgstr "Exclure"
+msgstr "Vynechať"
 
 #. Build the exclude label
 #: ../src/preferences.c:1006
 msgid ""
-"Regex list of items that should not be inserted into the history "
-"(passwords/sites that you don't need in history, etc)."
+"Regex list of items that should not be inserted into the history (passwords/"
+"sites that you don't need in history, etc)."
 msgstr ""
-"Liste des expressions qui ne devraient pas être insérés dans l'historique "
-"(mots de passe/sites dont vous n'avez pas besoin dans l'historique, etc)."
+"Zoznam regulárnych výrazov, ktoré nemajú byť ukladané do histórie (heslá/"
+"webstránky, ktoré nechcete mať v histórií atď)."
 
 #: ../src/preferences.c:1026
 msgid "Regex"
-msgstr "Expressions"
+msgstr "Regulárny výraz"
 
 #. Build the exclude windows section
 #: ../src/preferences.c:1052
 msgid "Exclude clipboard content from windows:"
-msgstr "Exclure le contenu du presse-papiers en provenance des fenêtres :"
+msgstr "Neukladať históriu pre tieto okná:"
 
 #: ../src/preferences.c:1059
 msgid ""
 "Regular expression to match against window name. For example\n"
 "^(keepass)|(lastpass)\n"
-"Will cause all windows starting with either 'keepass' or 'lastpass' to be ignored.\n"
+"Will cause all windows starting with either 'keepass' or 'lastpass' to be "
+"ignored.\n"
 "The match is case insensitive."
 msgstr ""
-"Expression régulière à faire correspondre au nom de la fenêtre. Par exemple,\n"
+"Regulárny výraz popisujúci názov okna. Napríklad\n"
 "^(keepass)|(lastpass)\n"
-"Toutes les fenêtres commençant par 'keepass' ou 'lastpass' seront ignorées.\n"
-"La correspondance est sensible à la casse."
+"spôsobí to, že okná, ktorých názov sa začína na 'keepass' alebo 'lastpass' "
+"budú ignorované.\n"
+"Na veľkosti písmen sa neberie ohľad."
 
 #: ../src/preferences.c:1067
 msgid "Hotkeys"
-msgstr "Raccourcis claviers"
+msgstr "Klávesové skratky"
 
 #: ../src/preferences.c:1075
 msgid "<b>Hotkeys</b>"
-msgstr "<b>Raccourcis</b>"
+msgstr "<b>Klávesové skratky</b>"
 
 #: ../src/preferences.c:1085
 msgid "History hotkey:"
-msgstr "Historique des raccourcis clavier :"
+msgstr "Skratka pre históriu:"
 
 #: ../src/preferences.c:1094
 msgid "Actions hotkey:"
-msgstr "Actions des raccourcis clavier :"
+msgstr "Skratka pre akcie:"
 
 #: ../src/preferences.c:1103
 msgid "Menu hotkey:"
-msgstr "Menu des raccourcis clavier :"
+msgstr "Skratka pre ponuku:"
 
 #: ../src/preferences.c:1112
 msgid "Manage hotkey:"
-msgstr "Gérer les raccourcis clavier :"
+msgstr "Skratka pre správu:"
 
 #: ../src/preferences.c:1121
 msgid "Offline mode hotkey:"
-msgstr "Touche mode hors connexion:"
+msgstr "Skratka pre režim offline:"
 
 #: ../src/utils.c:40 ../src/utils.c:47
 #, c-format
 msgid "Couldn't create directory: %s\n"
-msgstr "Impossible de créer le répertoire:%s\n"
+msgstr "Nepodarilo sa vytvoriť adresár %s\n"
 
 #: ../src/utils.c:131
 msgid "Run as daemon"
-msgstr "Exécuter en tant que démon"
+msgstr "Spúšťať ako démon"
 
 #: ../src/utils.c:138
 msgid "Do not use status icon (Ctrl-Alt-P for menu)"
-msgstr "Ne pas utiliser l'icône d'état (Ctrl-Alt-P pour le menu)"
+msgstr "Nepoužívať stavovú ikonu (ponuka je vyvolaná stlačením Ctrl-Alt-P)"
 
 #: ../src/utils.c:145
 msgid "Print clipboard contents"
-msgstr "Imprimer le contenu du presse-papier"
+msgstr "Tlačiť obsah schránky"
 
 #: ../src/utils.c:152
 msgid "Print primary contents"
-msgstr "Imprimer le contenu principal"
+msgstr "Tlačiť primárny obsah"
 
 #: ../src/utils.c:164
 msgid ""
@@ -357,10 +359,17 @@ msgid ""
 "  echo \"copied to clipboard\" | clipit\n"
 "  clipit \"copied to clipboard\"\n"
 "  echo \"copied to clipboard\" | clipit -c"
-msgstr "Clipboard exemples d'utilisation CLI:\n\necho \"copié dans le presse papier\" | clipit\nclipit \"copié dans le presse papier\"\necho \"copié dans le presse papier\" | clipit-c"
+msgstr ""
+"Príklady použitia schránky v príkazovom riadku:\n"
+"\n"
+" echo \"skopírované do schránky\"  | clipit\n"
+" clipit \"skopírované do schránky\"\n"
+" echo \"skopírované do schránky\" | clipit -c"
 
 #: ../src/utils.c:170
 msgid ""
 "Written by Cristian Henzel.\n"
 "Report bugs to <oss@rspwn.com>."
-msgstr "Écrit par Cristian Henzel.\nSignaler un bogue à <oss@rspwn.com> ."
+msgstr ""
+"Napísal Christian Henzel.\n"
+"Chyby hláste na <oss@rspwn.com>."
