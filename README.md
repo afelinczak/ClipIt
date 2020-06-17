@@ -2,8 +2,6 @@ Introduction
 ===============================================================================
 
 ClipIt is a lightweight GTK+ clipboard manager.
-
-This repository is a fork for building patched version for ppa.
  
 Project website: https://github.com/CristianHenzel/ClipIt
 
@@ -36,7 +34,13 @@ sudo apt-get install build-essential git automake xdotool autoconf intltool auto
     ./autogen.sh
     ./configure --with-gtk3 
     make
-    sudo checkinstall
+    sudo make install
+    
+ #### Meson experimental support:
+    meson build -Dwith-gtk3=true
+    cd build
+    ninja
+    sudo ninja install  
 
 Documentation
 ===============================================================================
