@@ -26,7 +26,6 @@ Makefile
 Makefile.in
 compile
 
-debian
 .anjuta
 .anjuta_sym_db.db
 ClipIt.anjuta
@@ -35,6 +34,3 @@ build
 CMakeCache.txt
 ClipIt
 ClipIt.cbp
-cmake_install.cmake
-
-

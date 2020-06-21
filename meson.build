@@ -1,18 +1,5 @@
-project('ClipIt', 'c', version : '1.4.5',)
-
-headers = [
-    'src/clipit-i18n.h',
-    'src/daemon.h',
-    'src/eggaccelerators.h',
-    'src/history.h',
-    'src/keybinder.h',
-    'src/main.h',
-    'src/manage.h',
-    'src/preferences.h',
-    'src/utils.h'
-]
-install_headers(headers)
-
+project('clipit', 'c', version : '1.4.5', license: 'GPL-3+')
+package = meson.project_name()
 sources = [
         'src/daemon.c',
         'src/eggaccelerators.c',
@@ -40,8 +27,6 @@ dependencies = [
     dependency(app_ind)
 ]
 
-subdir('po')
-
 conf = configuration_data()
 
 if get_option('enable-appindicator')
@@ -50,7 +35,6 @@ else
   conf.set('HAVE_APPINDICATOR', 0)
 endif
 
-package = 'clipit'
 conf.set('ENABLE_NLS', 1)
 conf.set_quoted('GETTEXT_PACKAGE', package)
 conf.set('HAVE_BIND_TEXTDOMAIN_CODESET', 1)
@@ -74,9 +58,38 @@ conf.set_quoted('PACKAGE_STRING', package + ' ' + meson.project_version())
 conf.set_quoted('PACKAGE_TARNAME', package)
 conf.set_quoted('PACKAGE_URL', '')
 conf.set_quoted('PACKAGE_VERSION', meson.project_version())
+conf.set('STDC_HEADERS', 'void')
 conf.set('STDC_HEADERS', 1)
 conf.set_quoted('VERSION', meson.project_version())
 
 configure_file(output : 'config.h', configuration : conf)
+
+i18n = import('i18n')
+add_project_arguments('-DGETTEXT_PACKAGE="@0@"'.format(package), language:'c')
+subdir('po')
+
+i18n.merge_file(
+  input: 'data/clipit.desktop.in',
+  output: 'clipit.desktop',
+  type: 'desktop',
+  po_dir: 'po',
+  install: true,
+  install_dir: '/usr/share/applications'
+)
+
+i18n.merge_file(
+  input: 'data/clipit-startup.desktop.in',
+  output: 'clipit-startup.desktop',
+  type: 'desktop',
+  po_dir: 'po',
+  install: true,
+  install_dir: '/etc/xdg/autostart'
+)
+
+
+install_subdir('debian/icons', install_dir: '/usr/share')
+install_data('data/clipit-trayicon.svg', install_dir: '/usr/share/icons/hicolor/scalable/apps/')
+install_data('data/clipit-trayicon-offline.svg', install_dir: '/usr/share/icons/hicolor/scalable/apps/')
+install_man('doc/clipit.1')
                
-executable('ClipIt', sources, install : true, dependencies: dependencies)
+executable('ClipIt', sources, install : true, dependencies: dependencies, install_dir: '/usr/bin')
