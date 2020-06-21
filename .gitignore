@@ -15,7 +15,6 @@ po/*.header
 po/.intltool-merge-cache
 depcomp
 ABOUT-NLS
-po/POTFILES
 po/Rules-quot
 po/stamp-it
 autom4te.cache
